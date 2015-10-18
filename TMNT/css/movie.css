@@ -1,0 +1,132 @@
+body {
+    background-image: url("../images/background.png");
+    background-repeat: repeat;
+    font-size: 8pt;
+    font-family: Verdana, Tahoma, sans-serif;
+    margin:0;
+    padding: 0;
+}
+h1 {
+	font-size: 24pt;
+	font-family: Tahoma, Verdana, sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
+.banner {  /*顶部横幅的css*/
+	background-image: url("../images/bannerbackground.png");
+	background-repeat: repeat-x;
+	background-position: top;
+	text-align: center;
+	height: 50px;
+}
+.container { /*中间的盒子*/
+	width: 800px;
+	border: gray solid 4px;
+	margin: 0 auto;
+}
+
+.left {  /*盒子里面分为左右两大列，left和right*/
+	width: 550px;
+	float: left;
+}
+
+/*带.rottenbackground字样的css都是32%那个块的样式*/
+.left .rottenbackground {
+	background-image: url("../images/rottenbackground.png");
+	background-repeat: repeat-x;
+	height: 83px;
+}
+.left .rottenbackground img {
+	vertical-align: bottom;
+}
+.left .rottenbackground span {
+	font-size: 48pt;
+	font-weight: bold;
+	color: #f00;
+}
+.left .rottenbackground .numOfReview {
+	font-size: 8pt;
+	font-weight: normal;
+	color: #fff;
+}
+
+/*评论框有两列，所以还在里面使用两个div设置成左右两列*/
+.left .allReview {
+	width: 47%;
+	float: left;
+}
+.left .column1 {
+	margin:10px 1% 0 2%;
+}
+.left .column2 {
+	margin: 10px 2% 0 1%;
+}
+
+/*带.review的css都是评论这一整个大块里面的样式*/
+.review {
+	margin-bottom: 3em;
+}
+.review blockquote {
+	background-color: #E1D697;
+    border: gray 2px solid;
+    font-size: 8pt;
+	font-weight: bold;
+	min-height: 25px;
+	padding: 8px;
+	margin: 0;
+}
+.review blockquote img {
+	margin-right: 5px;
+	float: left;
+}
+.review p img {
+	vertical-align: top;
+}
+.review p span {
+	font-style: italic;
+	position: relative;
+	bottom: 20px;
+	left: 15%;
+}
+
+/*container右边的海报和基本信息*/
+.right {
+	width: 250px;
+	background-color: #A2B964;
+	float: right;
+}
+.right dl {
+	font-size: 8pt;
+	font-family: Arial, sans-serif;
+	margin: 1em 1em 0em 1em;
+}
+.right dl dt {
+	font-weight: bold;
+}
+.right dl dd {
+	margin-bottom: 1em;
+}
+
+/*显示评论数和页面的块*/
+.footer {
+	background-color: #A2B964;
+	text-align: center;
+	padding: 5px;
+}
+
+/*通过w3c检验的标志*/
+.check {
+	position: fixed;
+	bottom: 1px;
+	left: 80.5%;
+}
+/*因原有照片损失，所以用了其他网页上的图片，也调了大小和宽度，望见谅，谢谢！*/
+.check a img {
+  width: 88px;
+  height: 31px;
+}
+
+/*清除之前float效果*/
+.clear {
+	clear: both;
+}
