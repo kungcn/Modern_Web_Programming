@@ -1,0 +1,91 @@
+body {
+  font-family: "Microsoft YaHei","微软雅黑","Century Gothic",Futura,sans-serif;
+}
+.title {
+  background-image: url("../images/grandma.jpg");
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 700px;
+  margin: 0 auto;
+}
+.title h1 {
+    font-size: 44px;
+    text-align: right;
+    margin: 0px 15px 15px 15px;
+    position: relative;
+    right: 21%;
+    top: 18%;
+}
+.title p {
+  font-size: 36px;
+  margin: 35px 15px 15px 15px;
+  position: relative;
+  left: 60%;
+  top: 26%;
+}
+.left {
+  width: 90%;
+  margin: 0 auto;
+}
+.left > div {
+  width: 30%;
+  height: 45%;
+  float: left;
+}
+.left .listOfRecipes, .right {
+  border: #ccc 1px solid;
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px #ccc;
+  -moz-box-shadow:1px 1px 2px #ccc;
+}
+.left .listOfRecipes {
+  margin: 15px 15px 15px 15px;  /*不只写成15px是因为样式的可能改变，下同*/
+}
+.left .listOfRecipes div {
+  margin:  8px 8px 8px 8px;
+}
+.left .listOfRecipes a {
+  text-decoration: none;
+}
+.left .listOfRecipes > a {
+  margin: 8px 8px 8px 8px;
+  position: relative;
+  left: 80%;
+}
+a:hover {
+  text-decoration: underline;
+}
+.right {
+  width: 60%;
+  margin: 15px 15px 75px 15px;
+  float: left;
+}
+.right p, .right form {
+  margin: 25px 25px 25px 25px;
+}
+.right form input, .right form textarea {
+  border-radius: 4px;
+}
+.right form textarea {
+  width: 100%;
+  height: 112px;
+}
+.right button {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+  border-radius: 4px;
+  position: relative;
+  left: 90%;
+  bottom: 20px;
+}
+.footer {
+  width: 90%;
+  color: #ccc;
+  border-top: #ccc 1px solid;
+  text-align: center;
+  margin: 0 auto;
+}
+.clear {
+  clear: both;
+}

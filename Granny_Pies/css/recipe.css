@@ -1,0 +1,50 @@
+body {
+  font-size:11pt;
+  font-family:Georgia,Garamond,serif;
+  color: #404040;
+  background: url("http://www.cs.washington.edu/education/courses/cse190m/09sp/homework/1/silverware.jpg") repeat fixed;
+  background-color:white;
+}
+h1, h2 {
+  font-family:"Century Gothic",Futura,sans-serif;
+  color:#A4A400;
+  background-color:#F0F0F0;
+  text-decoration:underline;
+  letter-spacing: 0.2em;
+}
+h1 {
+  font-size:22pt;
+  font-weight:bold;
+  text-align:center;
+}
+h2 {
+  font-size:18pt;
+  font-weight:normal;
+  text-align:left;
+}
+.directions ol li span {
+  font-weight: bold;  /*没有用strong标签的原因是以后样式的可能改变*/
+}
+.comments blockquote {
+  font-style:italic;  /*没有用i标签的原因是以后样式的可能改变*/
+  background-color:#FFFFC8;
+  margin: 0 36px 0 36px;
+}
+.replaceCircle {
+  list-style-image: url('http://www.cs.washington.edu/education/courses/cse190m/09sp/homework/1/pie_icon.gif');
+}
+a:link {
+  font-size:11pt;
+  color:#A4A400;
+}
+/*因原有照片损失，所以用了其他网页上的图片，也调了大小和宽度，望见谅，谢谢！*/
+.links a img {
+  width: 88px;
+  height: 31px;
+}
+
+/*  额外效果导致的无用css，其余舍去的与新的css相似故删去
+.border {
+  border: #A4A400 solid 2px;
+}
+*/
