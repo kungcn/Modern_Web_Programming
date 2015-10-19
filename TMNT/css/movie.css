@@ -107,6 +107,7 @@ h1 {
 
 /*显示评论数和页面的块*/
 .footer {
+	clear: both; /*感觉其实混在中间是不好的，但是因为题目要求，所以也没有什么好的办法。个人习惯于用空块*/
 	background-color: #A2B964;
 	text-align: center;
 	padding: 5px;
@@ -122,9 +123,5 @@ h1 {
 .check a img {
   width: 88px;
   height: 31px;
-}
-
-/*清除之前float效果*/
-.clear {
-	clear: both;
+  clear: both;
 }
