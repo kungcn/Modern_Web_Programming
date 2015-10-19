@@ -56,7 +56,7 @@ h1 {
 	float: left;
 }
 .left .column1 {
-	margin:10px 1% 0 2%;
+	margin:10px 0 0 2%;
 }
 .left .column2 {
 	margin: 10px 2% 0 1%;
@@ -80,13 +80,11 @@ h1 {
 	float: left;
 }
 .review p img {
-	vertical-align: top;
+	float: left;
+	margin-right: 5px;
 }
 .review p span {
 	font-style: italic;
-	position: relative;
-	bottom: 20px;
-	left: 15%;
 }
 
 /*container右边的海报和基本信息*/
@@ -118,7 +116,7 @@ h1 {
 .check {
 	position: fixed;
 	bottom: 1px;
-	left: 80.5%;
+	left: 93.5%;
 }
 /*因原有照片损失，所以用了其他网页上的图片，也调了大小和宽度，望见谅，谢谢！*/
 .check a img {
