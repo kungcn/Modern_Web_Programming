@@ -124,10 +124,10 @@ body {
     right: 0px;
     opacity: 0;
 
-    transition: all 0.6s;
-    -webkit-transition: all 0.6s;
-    -o-transition: all 0.6s;
-    -moz-transition: all 0.6s;
+    transition:all 0.6s 0.1s;
+    -webkit-transition:all 0.6s 0.1s;
+    -moz-transition:all 0.6s 0.1s;
+    -o-transition:all 0.6s 0.1s;
 }
 
 #at-plus-container:hover #info-bar {
@@ -136,6 +136,11 @@ body {
     bottom: 176%;
     right: -53px;
     opacity: 1;
+
+    transition:all 0.6s 0s;
+    -webkit-transition:all 0.6s 0s;
+    -moz-transition:all 0.6s 0s;
+    -o-transition:all 0.6s 0s;
 }
 
 #info-bar .info ul li {
@@ -215,54 +220,66 @@ body {
 }
 
 .mask {
-    background-image: url("../assets/images/nomask.png");
-
     bottom: 0;
     right: 0;
 
-    transition:all 0.6s;
-    -webkit-transition:all 0.6s;
-    -moz-transition:all 0.6s;
-    -o-transition:all 0.6s;
+    transition:all 0.6s 0.1s;
+    -webkit-transition:all 0.6s 0.1s;
+    -moz-transition:all 0.6s 0.1s;
+    -o-transition:all 0.6s 0.1s;
 }
 
 #at-plus-container:hover .mask {
-	bottom: 92.5%;;
+	background-image: url("../assets/images/nomask.png");
+	bottom: 92.5%;
     right: 53px;
+
+    transition:all 0.6s 0s;
+    -webkit-transition:all 0.6s 0s;
+    -moz-transition:all 0.6s 0s;
+    -o-transition:all 0.6s 0s;
 }
 
 .history {
-	background-image: url("../assets/images/history.png");
-
 	bottom: 0;
     right: 0;
 
-    transition:all 0.6s;
-    -webkit-transition:all 0.6s;
-    -moz-transition:all 0.6s;
-    -o-transition:all 0.6s;
+    transition:all 0.6s 0.1s;
+    -webkit-transition:all 0.6s 0.1s;
+    -moz-transition:all 0.6s 0.1s;
+    -o-transition:all 0.6s 0.1s;
 }
 
 #at-plus-container:hover .history {
+	background-image: url("../assets/images/history.png");
     bottom: -30.5%;
     right: 59px;
+
+    transition:all 0.6s 0s;
+    -webkit-transition:all 0.6s 0s;
+    -moz-transition:all 0.6s 0s;
+    -o-transition:all 0.6s 0s;
 }
 
 .message {
-	background-image: url("../assets/images/message.png");
-
 	top: 0;
     right: 0;
 
-    transition:all 0.6s;
-    -webkit-transition:all 0.6s;
-    -moz-transition:all 0.6s;
-    -o-transition:all 0.6s;
+    transition:all 0.6s 0.1s;
+    -webkit-transition:all 0.6s 0.1s;
+    -moz-transition:all 0.6s 0.1s;
+    -o-transition:all 0.6s 0.1s;
 }
 
 #at-plus-container:hover .message {
+	background-image: url("../assets/images/message.png");
     top: 45px;
     right: 52px;
+
+    transition:all 0.6s 0s;
+    -webkit-transition:all 0.6s 0s;
+    -moz-transition:all 0.6s 0s;
+    -o-transition:all 0.6s 0s;
 }
 
 .unread {
@@ -276,38 +293,51 @@ body {
 	position: absolute;
 	left: 20px;
     bottom: 20px;
+    opacity: 0;
+}
+
+#at-plus-container:hover .unread {
+	opacity: 1;
 }
 
 .setting {
-	background-image: url("../assets/images/setting.png");
-
 	top: 0;
     right: 0;
 
-    transition:all 0.6s;
-    -webkit-transition:all 0.6s;
-    -moz-transition:all 0.6s;
-    -o-transition:all 0.6s;
+    transition:all 0.6s 0.1s;
+    -webkit-transition:all 0.6s 0.1s;
+    -moz-transition:all 0.6s 0.1s;
+    -o-transition:all 0.6s 0.1s;
 }
 
 #at-plus-container:hover .setting {
+	background-image: url("../assets/images/setting.png");
     top: 57px;
     right: 17px;
+
+    transition:all 0.6s 0s;
+    -webkit-transition:all 0.6s 0s;
+    -moz-transition:all 0.6s 0s;
+    -o-transition:all 0.6s 0s;
 }
 
 .sign {
-	background-image: url("../assets/images/signin.png");
-
 	top: 0;
     right: 0;
 
-    transition:all 0.6s;
-    -webkit-transition:all 0.6s;
-    -moz-transition:all 0.6s;
-    -o-transition:all 0.6s;
+    transition:all 0.6s 0.1s;
+    -webkit-transition:all 0.6s 0.1s;
+    -moz-transition:all 0.6s 0.1s;
+    -o-transition:all 0.6s 0.1s;
 }
 
 #at-plus-container:hover .sign {
+	background-image: url("../assets/images/signin.png");
     top: 60px;
     right: -20px;
+
+    transition:all 0.6s 0s;
+    -webkit-transition:all 0.6s 0s;
+    -moz-transition:all 0.6s 0s;
+    -o-transition:all 0.6s 0s;
 }
