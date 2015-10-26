@@ -3,6 +3,14 @@ Homework of Modern Web Programming(SE-805)
 
 This repository is to collect the homework of my Modern Web Programming course.
 
+## Each Folder
+Each folder contains my each week homework. Under each folder, photos of the page can be found.
+
+* week 02: to write an easy recipe.
+* week 04: to write a movie review page.
+* week 05: to write a ring button, when hovering, something appears.
+
+
 ## LICENSE
 The MIT License (MIT)
 
