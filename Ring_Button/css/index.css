@@ -4,23 +4,28 @@ body {
 
 /*set whole size*/
 #at-plus-container {
-	width: 30px;
+    width: 30px;
     height: 30px;
 
     margin: 0;
     padding: 0;
 
-	position: absolute;
-    left: 599px;
-    bottom: 79.5px;
+    position: absolute;
+    left: 669px;
+    bottom: 103.5px;
 }
 /*size changes when hovering*/
 #at-plus-container:hover {
     width: 155px;
     height: 250px;
 
-    left: 527px;
-    bottom: 2.8%;
+    left: 597px;
+    bottom: 6.5%;
+
+    transition:all 0.3s;
+    -webkit-transition:all 0.3s;
+    -moz-transition:all 0.3s;
+    -o-transition:all 0.3s;
 }
 
 /*ensure the position and size of original button*/
@@ -35,6 +40,11 @@ body {
 #at-plus-container:hover #bottom-positioner {
     left: 72px;
     bottom: 61px;
+
+    transition:all 0.3s;
+    -webkit-transition:all 0.3s;
+    -moz-transition:all 0.3s;
+    -o-transition:all 0.3s;
 }
 
 /*ensure the original button size*/
@@ -66,10 +76,10 @@ body {
     left: -10px;
     top: -10px;
 
-    transition:all 0s 0s;
-    -webkit-transition:all 0s 0s;
-    -moz-transition:all 0s 0s;
-    -o-transition:all 0s 0s;
+    transition:all 0.3s;
+    -webkit-transition:all 0.3s;
+    -moz-transition:all 0.3s;
+    -o-transition:all 0.3s;
 }
 
 /*set icon and its changes*/
@@ -88,10 +98,10 @@ body {
     transition:background-image 0.3s 0.6s,background-size 0.3s 0.6s,background-color 0.3s 0.6s,
                width 0.3s 0.6s,height 0.3s 0.6s;
     -webkit-transition:background-image 0.3s 0.6s,background-size 0.3s 0.6s,background-color 0.3s 0.6s,
-    -moz-           width 0.3s 0.6s,height 0.3s 0.6s;
+               width 0.3s 0.6s,height 0.3s 0.6s;
     -o-transition:background-image 0.3s 0.6s,background-size 0.3s 0.6s,background-color 0.3s 0.6s,
                width 0.3s 0.6s,height 0.3s 0.6s;
-    transition:background-image 0.3s 0.6s,background-size 0.3s 0.6s,background-color 0.3s 0.6s,
+    -moz-transition:background-image 0.3s 0.6s,background-size 0.3s 0.6s,background-color 0.3s 0.6s,
                width 0.3s 0.6s,height 0.3s 0.6s;
 }
 
@@ -102,10 +112,14 @@ body {
     background-color: rgba(48, 63, 159, 1);
 	background-size: 35px;
 
-    transition:background-image 0s 0s,background-size 0s 0s,background-color 0s 0s;
-    -webkit-transition:background-image 0s 0s,background-size 0s 0s,background-color 0s 0s;
-    -moz-transition:background-image 0s 0s,background-size 0s 0s,background-color 0s 0s;
-    -o-transition:background-image 0s 0s,background-size 0s 0s,background-color 0s 0s;
+    transition:background-image 0.3s 0s,background-size 0.3s 0s,background-color 0.3s 0s,
+               width 0.3s 0s,height 0.3s 0s;
+    -webkit-transition:background-image 0.3s 0s,background-size 0.3s 0s,background-color 0.3s 0s,
+               width 0.3s 0s,height 0.3s 0s;
+    -moz-transition:background-image 0.3s 0s,background-size 0.3s 0s,background-color 0.3s 0s,
+               width 0.3s 0s,height 0.3s 0s;
+    -o-transition:background-image 0.3s 0s,background-size 0.3s 0s,background-color 0.3s 0s,
+               width 0.3s 0s,height 0.3s 0s;
 }
 
 /*information bar*/
