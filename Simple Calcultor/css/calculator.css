@@ -1,0 +1,79 @@
+body {
+	font-family: "Microsoft YaHei","微软雅黑",sans-serif;
+}
+
+/*-----------------------------set calculator name-----------------------------*/
+h1 {
+	text-align: center;
+	color: rgb(96,127,166);
+}
+h1 span {
+	font-size: 20px;
+}
+
+/*-----------------------------set positoner of the whole----------------------*/
+#positoner {
+	width: 20%;
+	margin: 0 auto;
+}
+/*set appearance of calculator*/
+.total {
+	border: #ccc 1px solid;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px #ccc;
+    
+    float: left;
+}
+
+/*set input textarea*/
+.input-div {
+	text-align: center;
+}
+.input-div input {
+	width: 90%;
+	height: 50px;
+
+	font-size: 32px;
+	font-weight: bold;
+	text-align: right;
+
+	border-radius:4px;
+	background-color: #000;
+	color: #fff;
+
+	cursor:not-allowed;
+	margin: 10px auto;
+	
+}
+/*set button column*/
+.button-line {
+	width: 22%;
+	height: 15%;
+
+	margin: 0 auto;
+	float: left;
+}
+.leftMost {
+	margin: 0 1% 0 4.3%;
+}
+.closeLeft {
+	margin: 0 1%;
+}
+.rightMost {
+	margin: 0 1.5% 0 1%;
+}
+
+/*set buttons*/
+button {
+	width: 86%;
+	height: 43px;
+
+	background-color: #fff;
+
+	cursor: pointer;
+	margin: 8px auto;
+}
+
+.clear {
+	clear: both;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>简单计算器</title>
+		<link rel="stylesheet" type="text/css" href="css/calculator.css">
+		<script type="text/javascript" src="js/calculator.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
+	<body>
+        <h1>简单计算器 <span>Simple Calculator</span></h1>
+        <div id="positoner">
+		    <div class="total">
+		        <div class="input-div">
+		        	<input id="input" onkeypress="javascript:return false"/><!--can not work if this attribute is in JavaScript-->
+		        </div>
+		    	<div class="button-line leftMost">
+		    		<button class="button">7</button>
+		    		<button class="button">4</button>
+		    		<button class="button">1</button>
+		    		<button class="button">0</button>
+		    		<button class="button">(</button>
+		    	</div>
+		    	<div class="button-line closeLeft">
+		    		<button class="button">8</button>
+		    		<button class="button">5</button>
+		    		<button class="button">2</button>
+		    		<button class="button">.</button>
+		    		<button class="button">)</button>
+		    	</div>
+		    	<div class="button-line closeLeft">
+		    		<button class="button">9</button>
+		    		<button class="button">6</button>
+		    		<button class="button">3</button>
+		    		<button class="button" id="clearOne">&larr;</button>
+		    		<button class="button" id="clearAll">CE</button>
+		    	</div>
+		    	<div class="button-line rightMost">
+		    		<button class="button">/</button>
+		    		<button class="button">*</button>
+		    		<button class="button">-</button>
+		    		<button class="button">+</button>
+		    		<button class="button" id="equality">=</button>
+		    	</div>
+		    </div>
+        </div>
+        <div class="clear"></div>
+	</body>
+</html>
