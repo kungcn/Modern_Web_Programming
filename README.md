@@ -10,6 +10,7 @@ Each folder contains my each week homework. Under each folder, photos of the pag
 * week 04: to write a movie review page.
 * week 05: to write a ring button, when hovering, something appears.
 * week 06: to perfect week 05 homework.
+* week 07: to create a simple calcultor.
 
 
 ## LICENSE
