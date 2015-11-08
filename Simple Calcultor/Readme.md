@@ -1,5 +1,5 @@
 # Readme
-  This is the seventh week homework of Modern Web Programming.
+  This is the sevehnthweek homework of Modern Web Programming.
 
 ## Update
 1. calcultor finished generally.
