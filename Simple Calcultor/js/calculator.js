@@ -75,7 +75,7 @@ window.onload = function() {
             document.getElementById("input").value = "";
         } else {
             try  {
-                var temp = eval(document.getElementById("input").value).toFixed(8);
+                var temp = eval(document.getElementById("input").value).toFixed(4);
             }
             catch(exception) {
                 alert("Unknown Syntax Error, check again please!");
