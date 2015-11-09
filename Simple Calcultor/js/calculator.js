@@ -1,6 +1,6 @@
 window.onload = function() {
     
-    alert("您好！本计算器功能简单，使用方便。还可以进行八进制运算哦！哈哈哈哈！对一些常见的错误操作会有温馨提示，计算器的提示大多是仿照CASIO fx-82ES来进行提示的。若有bug，欢迎发邮件到kcnnow@gmail.com一齐讨论。谢谢使用！")
+    alert("您好！本计算器功能简单，使用方便。还可以进行八进制运算哦！哈哈哈哈！对一些常见的错误操作会有温馨提示，计算器的错误提示大多是仿照CASIO fx-82ES来进行提示的，功能和它有点不同哦！大家自己探索一下吧。若有bug，欢迎发邮件到kcnnow@gmail.com一齐讨论。谢谢使用！")
 
 	//  get all buttons
 	var arr = document.getElementsByTagName("button");
