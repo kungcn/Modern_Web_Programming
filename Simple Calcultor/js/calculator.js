@@ -1,4 +1,9 @@
+//  ban Octal 其实我不想禁止的，但是。。为了不让别人说是bug就禁止了吧5555555...
+"use strict"
+
 window.onload = function() {
+    
+    alert("您好！本计算器功能简单，使用方便。对一些常见的错误操作会有温馨提示。若有bug，欢迎发邮件到kcnnow@gmail.com一齐讨论。谢谢使用！")
 
 	//  get all buttons
 	var arr = document.getElementsByTagName("button");
@@ -74,7 +79,7 @@ window.onload = function() {
                 alert("Unknown Syntax Error, check again please!");
                 return 0;
             }
-            if (temp == "Infinity") {
+            if (temp == "Infinity" || isNaN(temp)) {
                 //  math error includes divide by 0
                 alert("Math Error, check again please!");
             } else {
