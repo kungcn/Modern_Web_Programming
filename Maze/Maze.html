@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Maze</title>
+		<link rel="stylesheet" type="text/css" href="css/Maze.css">
+		<script type="text/javascript" src="js/Maze.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
+	<body>
+        <h1>The Amazing Mouse Maze!</h1>
+        <h2>Move your mouse over the "S" to begin.</h2>
+        <h2 id="tips" class="hidden">0</h2>
+        <div class="maze">
+            <div class="full top-full wall" name="wall"></div>
+            <div class="multi-wall">
+                <div class="left-most" name="wall"></div>
+                <div class="cheat" name="cheat"></div>
+                <div class="space" name="blank" id="space">
+                    <div id="start">
+                        S
+                    </div>
+                </div>
+                <div class="cheat" name="cheat"></div>
+            </div>
+            <div class="multi-wall">
+                <div class="gap" name="blank" id="gap"></div>
+            </div>
+            <div class="multi-wall">
+                <div class="blank" name="blank" id="blank"></div>
+                <div class="middle-wall" name="wall"></div>
+            </div>
+            <div class="multi-wall">
+                <div class="gap" name="blank" id="gap-1"></div>
+            </div>
+            <div class="multi-wall">
+                <div class="right-most" name="wall"></div>
+                <div class="cheat" name="cheat"></div>
+                <div class="space" name="blank" id="space-1">
+                    <div id="end">
+                        E
+                    </div>
+                </div>
+                <div class="cheat" name="cheat"></div>
+            </div>
+            <div class="full down-full wall" name="wall"></div>
+        </div>
+        <div class="clear"></div>
+        <p class="instruction">
+            The object of this game is to guide the mouse cursor through the start area and get to the end area. Be sure to avoid the walls:
+        </p>
+        <div class="sample"></div>
+        <p class="instruction">
+            Good luck!
+        </p>
+	</body>
+</html>

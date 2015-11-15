@@ -1,0 +1,157 @@
+body {
+	font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+}
+
+/*-----------------------------introduction and tips when playing game---------*/
+h1,h2 {
+	text-align: center;
+}
+
+/*hidden until something happens*/
+.hidden {
+	visibility: hidden;
+  
+    transition:all 0.5s ease-in-out;
+	-webkit-transition:all 0.5s ease-in-out;
+	-o-transition:all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;	
+}
+
+.visibilty {
+	visibility: visible;
+
+	transition:all 0.5s ease-in-out;
+	-webkit-transition:all 0.5s ease-in-out;
+	-o-transition:all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
+}
+
+/*-----------------------------whole size of maze------------------------------*/
+.maze {
+	width: 695px;
+	height: 420px;
+
+	margin: 0 auto;
+}
+
+/*-----------------------------full walls in maze------------------------------*/
+.full {
+	width: 693px;
+	height: 80px;
+
+	background-color: rgb(230,230,230);
+	border-left: 1px #000 solid;
+	border-right: 1px #000 solid;
+
+	margin: 0 0;
+}
+
+.top-full {
+	border-top: 1px #000 solid;
+}
+
+.down-full {
+	clear: both;
+
+	border-bottom: 1px #000 solid;
+}
+
+.multi-wall {
+	float: left;
+	margin: 0 0;
+	padding: 0 0;
+}
+
+/*-----------------------------the most left and right of the maze-------------*/
+.right-most, .left-most {
+	width: 208px;
+	height: 200px;
+
+	background-color: rgb(230,230,230);
+    border-left: 1px #000 solid;
+	border-right: 1px #000 solid;
+	border-bottom: 1px #000 solid;
+}
+
+.space {
+	width: 210px;
+	height: 44px;
+
+    cursor: pointer;
+    border-bottom:1px #000 solid;
+    float: left;
+}
+
+.space div {
+    height: 40px;
+	width: 40px;
+
+	font-size: 30px;
+	font-weight: bolder;
+	text-align: center;
+
+	border:1px #000 solid;
+	margin: 1px 0px 1px 0px;
+}
+
+.space #start {
+	background-color: rgb(49,255,132);
+}
+
+.space #end {
+	background-color: rgb(131,130,254);
+
+	float: right;
+}
+
+.gap {
+	width: 50px;
+	height: 244px;
+
+	border-top: 1px #000 solid;
+	border-bottom:1px #000 solid;
+
+	cursor: pointer;
+}
+
+.blank {
+	width: 175px;
+	height: 51px;
+
+	border-top: 1px #000 solid;
+	cursor: pointer;
+}
+
+.middle-wall {
+	width: 173px;
+	height: 193px;
+
+	background-color: rgb(230,230,230);
+	border-left: 1px #000 solid;
+	border-right: 1px #000 solid;
+	border-top: 1px #000 solid;
+}
+
+.clear {
+	clear: both;
+}
+
+/*-----------------wall sample showing to let players avoid hovering on it-----*/
+.sample {
+	width: 8%;
+	height: 30px;
+	margin: 0 auto;
+	background-color: rgb(230,230,230);
+	border:1px #000 solid;
+}
+
+/*-----------------------------games instruction-------------------------------*/
+.instruction {
+	width: 760px;
+	text-align: justify;
+	margin: 20px auto;
+}
+
+.maze .bgc {
+	background-color: rgb(232,0,2);
+}
