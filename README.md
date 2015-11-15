@@ -11,6 +11,7 @@ Each folder contains my each week homework. Under each folder, photos of the pag
 * week 05: to write a ring button, when hovering, something appears.
 * week 06: to perfect week 05 homework.
 * week 07: to create a simple calcultor.
+* week 08: to create an amazing maze and mole.
 
 
 ## LICENSE
