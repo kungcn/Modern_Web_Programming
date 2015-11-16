@@ -1,5 +1,5 @@
 body {
-	font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+	font-family: "Century Gothic",sans-serif;
 }
 
 /*-----------------------------introduction and tips when playing game---------*/
@@ -89,6 +89,7 @@ h1,h2 {
 
     font-size: 30px;
     font-weight: bolder;
+    font-family: "Mircosoft YaHei","微软雅黑";
     text-align: center;
 
     border: 1px #000 solid;
