@@ -1,11 +1,5 @@
 body {
 	font-family: "Microsoft YaHei","微软雅黑",sans-serif;
-    
-    /*refuse to choose text in website*/
-	user-select:none;
-	-webkit-user-select:none;
-	-o-user-select:none;
-	-moz-user-select: none;
 }
 
 /*-----------------------------title and introduction--------------------------*/
@@ -72,6 +66,11 @@ h1,h2 {
 	border-top: rgb(168,168,168) 1px solid;
 	border-bottom: rgb(168,168,168) 1px solid;
 	text-align: center;
+
+    /*refuse to choose text in website*/
+	-webkit-user-select:none;
+	-o-user-select:none;
+	-moz-user-select: none;
 }
 
 .button button {
