@@ -9,7 +9,7 @@ h1,h2 {
 
 /*hidden until something happens*/
 .hidden {
-	visibility: hidden;
+	opacity: 0;
   
     transition:all 0.5s ease-in-out;
 	-webkit-transition:all 0.5s ease-in-out;
@@ -18,7 +18,7 @@ h1,h2 {
 }
 
 .visibilty {
-	visibility: visible;
+	opacity: 1;
 
 	transition:all 0.5s ease-in-out;
 	-webkit-transition:all 0.5s ease-in-out;
