@@ -1,5 +1,11 @@
 body {
 	font-family: "Microsoft YaHei","微软雅黑",sans-serif;
+    
+    /*refuse to choose text in website*/
+	user-select:none;
+	-webkit-user-select:none;
+	-o-user-select:none;
+	-moz-user-select: none;
 }
 
 /*-----------------------------title and introduction--------------------------*/
