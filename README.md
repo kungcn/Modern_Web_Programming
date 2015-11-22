@@ -12,6 +12,7 @@ Each folder contains my each week homework. Under each folder, photos of the pag
 * week 06: to perfect week 05 homework.
 * week 07: to create a simple calcultor.
 * week 08: to create an amazing maze and mole.
+* week 09: to create a difficult puzzle. I can't win in this game...I want to cry...
 
 
 ## LICENSE
