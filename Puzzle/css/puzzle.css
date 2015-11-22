@@ -1,0 +1,216 @@
+body {
+	font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+.game {
+    width: 360px;
+    margin: 30px auto;
+}
+
+.game img {
+	border:1px #ccc solid;
+}
+
+/*-----------------------------buttons to select-------------------------------*/
+.button {
+	margin: 20px auto;
+	width: 150px;
+}
+
+.game .button button {
+    width: 150px;
+    height: 35px;
+
+    background-color: rgb(74,132,240);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 900;
+
+    border: none;
+    box-shadow: 4px 4px 6px #666;
+
+    cursor: pointer;
+    margin: 18px 15px 0px 15px;
+}
+
+button:hover {
+	transform:scale(1.1,1.1);
+    -o-transform:scale(1.1,1.1);
+    -moz-transform:scale(1.1,1.1);
+    -webkit-transform:scale(1.1,1.1);
+}
+
+/*-----------------------tell difference about block numbers, the images-------*/
+.game .hidden {
+    display: none;
+}
+
+.game .visiable {
+    display: block;
+}
+
+.blocks div {
+    width: 90px;
+    height: 90px;
+}
+
+.blocks .puzzle-blocks {
+    width: 88px;
+    height: 88px;
+
+    border:1px #ccc solid;
+    cursor: pointer;
+}
+
+.puzzle-blocks:hover {
+    transform:scale(1.03,1.03);
+    -o-transform:scale(1.03,1.03);
+    -moz-transform:scale(1.03,1.03);
+    -webkit-transform:scale(1.03,1.03);
+}
+
+#bl-9 .mini div {
+    width: 120px;
+    height: 120px;
+}
+
+#bl-9 .blocks .mini-puzzle-blocks {
+    width: 118px;
+    height: 118px;
+
+    border:1px #ccc solid;
+    cursor: pointer;
+}
+
+.mini-puzzle-blocks:hover {
+    transform:scale(1.03,1.03);
+    -o-transform:scale(1.03,1.03);
+    -moz-transform:scale(1.03,1.03);
+    -webkit-transform:scale(1.03,1.03);
+}
+
+.difficult {
+    background-image: url("../images/drink.png");
+}
+
+.easy {
+    background-image: url("../images/drinkEasy.png")
+}
+
+.difficult9 {
+    background-image: url("../images/argue.png");
+}
+
+.easy9 {
+    background-image: url("../images/argueEasy.png");
+}
+
+.blocks {
+    float: left;
+}
+
+/*-----------------------------16 blocks---------------------------------------*/
+#puz16-0 {
+    background-position: 0px 0px;
+}
+
+#puz16-4 {
+    background-position: 0px -88px;
+}
+
+#puz16-8 {
+    background-position: 0px -174px;
+}
+
+#puz16-12 {
+    background-position: 0px -263px;
+}
+
+#puz16-1 {
+    background-position: 264px 0px;
+}
+
+#puz16-5 {
+    background-position: 264px -88px;
+}
+
+#puz16-9 {
+    background-position: 264px -174px;
+}
+
+#puz16-13 {
+    background-position: 264px -263px;
+}
+
+#puz16-2 {
+    background-position: 173px 0px;
+}
+
+#puz16-6 {
+    background-position: 173px -88px;
+}
+
+#puz16-10 {
+    background-position: 173px -174px;
+}
+
+#puz16-14 {
+    background-position: 173px -263px;
+}
+
+#puz16-3 {
+    background-position: 85px 0px;
+}
+
+#puz16-7 {
+    background-position: 85px -88px;
+}
+
+#puz16-11 {
+    background-position: 85px -174px;
+}
+
+#puz16-15 {
+    background-position: 85px -263px;
+}
+
+/*-----------------------------8 blocks----------------------------------------*/
+#puz9-0 {
+    background-position: 0px 0px;
+}
+
+#puz9-3 {
+    background-position: 0px -117px;
+}
+
+#puz9-6 {
+    background-position: 0px -234px;
+}
+
+#puz9-1 {
+    background-position: -117px 0px;
+}
+
+#puz9-4 {
+    background-position: -117px -117px;
+}
+
+#puz9-7 {
+    background-position: -117px -234px;
+}
+
+#puz9-2 {
+    background-position: -234px 0px;
+}
+
+#puz9-5 {
+    background-position: -234px -117px;
+}
+
+#puz9-8 {
+    background-position: -234px -234px;
+}
