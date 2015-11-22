@@ -91,16 +91,18 @@ function easyOrDifficult9(str, arr) {
 //  change images
 function changeimages(arr,blockNum) {
 	var tmp = arr;
-	for (var i = 0; i < blockNum; i++) {
-		var ran1 = parseInt(Math.random() * blockNum);
-		var ran2 = parseInt(Math.random() * blockNum);
+	//  the last block don't take part in swaping update on 2015.11.22 23:24
+	for (var i = 0; i < blockNum - 1; i++) {
+		var ran1 = parseInt(Math.random() * (blockNum - 1));
+		var ran2 = parseInt(Math.random() * (blockNum - 1));
 		//  ensure that the puzzle can be finished
 		while(ran1 == ran2)
-		    ran2 = parseInt(Math.random() * blockNum);
+		    ran2 = parseInt(Math.random() * (blockNum - 1));
 		var temp = arr[ran1].id;
 		arr[ran1].id = arr[ran2].id;
 		arr[ran2].id = temp;
 	}
+	//  blank
 	arr[arr.length - 1].className = "";
 	return arr;
 }
