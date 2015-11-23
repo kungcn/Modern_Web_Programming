@@ -91,13 +91,17 @@ function easyOrDifficult9(str, arr) {
 //  change images
 function changeimages(arr,blockNum) {
 	var tmp = arr;
+	var len = blockNum;
+	if (len == 9)
+		len--;
 	//  the last block don't take part in swaping update on 2015.11.22 23:24
-	for (var i = 0; i < blockNum - 1; i++) {
-		var ran1 = parseInt(Math.random() * (blockNum - 1));
-		var ran2 = parseInt(Math.random() * (blockNum - 1));
+	//  ensure to have even times to changes
+	for (var i = 0; i < len; i++) {
+		var ran1 = parseInt(Math.random() * len);
+		var ran2 = parseInt(Math.random() * len);
 		//  ensure that the puzzle can be finished
 		while(ran1 == ran2)
-		    ran2 = parseInt(Math.random() * (blockNum - 1));
+		    ran2 = parseInt(Math.random() * len);
 		var temp = arr[ran1].id;
 		arr[ran1].id = arr[ran2].id;
 		arr[ran2].id = temp;
@@ -113,7 +117,7 @@ function move(arr, blockNum) {
 	if (blockNum == 9)
 		max = 3;
 	var block = 0;
-	if (!isSuccess()) {
+	if (!isSuccess(blockNum)) {
 		for (var i = 0; i < arr.length; i++)
 			if (arr[i].className == "")
 				block = i;
@@ -144,8 +148,12 @@ function move(arr, blockNum) {
 }
 
 //  decide whether it is successful
-function isSuccess() {
-	var arr = document.getElementsByName("puzzle");
+function isSuccess(blockNum) {
+	var arr = [];
+    if (blockNum == 9)
+        arr = document.getElementsByName("mini-puzzle");
+    else if (blockNum == 16)
+    	arr = document.getElementsByName("puzzle");
 	for (var i = 0; i < arr.length; i++) {
 		if (arr[i].id != arr[i].title)
 			return false;
