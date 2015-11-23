@@ -88,27 +88,42 @@ function easyOrDifficult9(str, arr) {
 	return arr;
 }
 
-//  change images
+//  simulation to changes images and ensure can win
 function changeimages(arr,blockNum) {
-	var tmp = arr;
-	var len = blockNum;
-	if (len == 9)
-		len--;
-	//  the last block don't take part in swaping update on 2015.11.22 23:24
-	//  ensure to have even times to changes
-	for (var i = 0; i < len; i++) {
-		var ran1 = parseInt(Math.random() * len);
-		var ran2 = parseInt(Math.random() * len);
-		//  ensure that the puzzle can be finished
-		while(ran1 == ran2)
-		    ran2 = parseInt(Math.random() * len);
-		var temp = arr[ran1].id;
-		arr[ran1].id = arr[ran2].id;
-		arr[ran2].id = temp;
-	}
-	//  blank
+	//  initial blank
 	arr[arr.length - 1].className = "";
-	return arr;
+    var times = 2000;
+    var block = 0;
+    var max = 4;
+	var a = [1,4];
+	if (blockNum == 9) {
+		a = [1, 3];
+		max = 3;
+	}
+    while (times--) {
+	for (var i = 0; i < arr.length; i++)
+		if (arr[i].className == "")
+			block = i;  //  check where is the blank one
+	var ran = Math.random() > 0.5?1:0;
+	for (var i = 0; i < arr.length; i++) {
+            if (Math.abs(block - i) == a[ran]) {
+            	if (max == 3 && ((block == 3 && i == 2)|| (block == 6 && i == 5))) {
+            		continue;
+            	}
+            	if (max == 4 && ((block == 4 && i == 3)||(block == 8 && i == 7)||(block == 12 && i == 11))) {
+            		continue;
+            	}
+            	var temp = arr[block].id;
+            	temp = arr[i].id;
+            	arr[i].id = arr[block].id;
+            	arr[block].id = temp;
+            	temp = arr[i].className;
+            	arr[i].className = arr[block].className;
+            	arr[block].className = temp;
+            }
+	}
+    }
+    return arr;
 }
 
 //  click to move
@@ -117,34 +132,36 @@ function move(arr, blockNum) {
 	if (blockNum == 9)
 		max = 3;
 	var block = 0;
-	if (!isSuccess(blockNum)) {
-		for (var i = 0; i < arr.length; i++)
-			if (arr[i].className == "")
-				block = i;
-		for (var i = 0; i < arr.length; i++) {
-			arr[i].onclick = function(i) {
-	            if (Math.abs(block - i) == 1 || Math.abs(block - i) == max) {
-	            	//  抱歉，因为没有想到好的解决办法，所以暂时先这样写。如果想到了好的方法会马上更新的
-	            	if (max == 3 && ((block == 3 && i == 2)|| (block == 6 && i == 5))) {
-	            		return 0 ;
-	            	}
-	            	if (max == 4 && ((block == 4 && i == 3)||(block == 8 && i == 7)||(block == 12 && i == 11))) {
-	            		return 0;
-	            	}
-	            	return function() {
-	            		var temp = arr[block].id;
-	            		temp = event.target.id;
-	            		event.target.id = arr[block].id;
-	            		arr[block].id = temp;
-	            		temp = event.target.className;
-	            		event.target.className = arr[block].className;
-	            		arr[block].className = temp;
-	            		move(arr,blockNum);
-	            	}
-	            }
-			}(i);
-		}
-    }
+	if (isSuccess(blockNum)) {
+		alert("Woo! You win! Congratulations!");
+		return 0;
+	}
+	for (var i = 0; i < arr.length; i++)
+		if (arr[i].className == "")
+			block = i;
+	for (var i = 0; i < arr.length; i++) {
+		arr[i].onclick = function(i) {
+            if (Math.abs(block - i) == 1 || Math.abs(block - i) == max) {
+            	//  抱歉，因为没有想到好的解决办法，所以暂时先这样写。如果想到了好的方法会马上更新的
+            	if (max == 3 && ((block == 3 && i == 2)|| (block == 6 && i == 5))) {
+            		return 0 ;
+            	}
+            	if (max == 4 && ((block == 4 && i == 3)||(block == 8 && i == 7)||(block == 12 && i == 11))) {
+            		return 0;
+            	}
+            	return function() {
+            		var temp = arr[block].id;
+            		temp = event.target.id;
+            		event.target.id = arr[block].id;
+            		arr[block].id = temp;
+            		temp = event.target.className;
+            		event.target.className = arr[block].className;
+            		arr[block].className = temp;
+            		move(arr,blockNum);
+            	}
+            }
+		}(i);
+	}
 }
 
 //  decide whether it is successful
@@ -158,6 +175,5 @@ function isSuccess(blockNum) {
 		if (arr[i].id != arr[i].title)
 			return false;
 	}
-	alert("Congratulations! You finish the puzzle that I can't finish~~");
 	return true;
 }
