@@ -64,6 +64,13 @@ button:hover {
 
     border:1px #ccc solid;
     cursor: pointer;
+
+   /*  don't use absolute position at the beginning...so I can't increase the duration directly... 
+    position: absolute;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	*/
 }
 
 .puzzle-blocks:hover {
@@ -84,6 +91,13 @@ button:hover {
 
     border:1px #ccc solid;
     cursor: pointer;
+
+    /*  don't use absolute position at the beginning...so I can't increase the duration directly... 
+    position: absolute;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	*/
 }
 
 .mini-puzzle-blocks:hover {
