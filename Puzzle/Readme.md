@@ -7,3 +7,5 @@ I can't win in the games but I am sure that the puzzle can be restored...
 rewrite the function called changeimages;
 ### 2015.11.23 18:37
 rewrite the changeimages function again, to ensure the puzzle can be finished by simulation.
+### 2015.11.23 22:38
+want to increase duration when moving blocks, but unfortunately, it failed. So I just let the code as comment.
