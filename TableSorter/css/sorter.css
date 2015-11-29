@@ -1,0 +1,64 @@
+body {
+	font-family: Georgia,serif;
+}
+
+/*-----------------------------two tables css----------------------------------*/
+table {
+	text-align: left;
+	font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+	border-collapse: collapse;
+	border:1px #ccc solid;
+}
+
+table td, table th {
+	border:1px #ccc solid;
+	padding:2px 1px 2px 3px;
+}
+
+table td {
+	padding:2px 3px 2px 3px;
+}
+
+table th {
+	background-color: #031B7F;
+	color: #fff;
+	cursor: pointer;
+
+	/*refuse to choose text in website*/
+	-webkit-user-select:none;
+	-o-user-select:none;
+	-moz-user-select: none;
+}
+
+table tbody > tr:nth-child(even) {
+	background-color: #ddd;
+}
+
+table tbody > tr:nth-child(odd) {
+	background-color: #fff;
+}
+
+/*-----------------------------special for staff because of the width----------*/
+#staff th {
+	min-width: 105px;
+}
+
+#staff th:first-child {
+    min-width: 110px;
+}
+
+#staff th:last-child {
+	min-width: 140px;
+}
+
+/*-----------------------------css use in .js----------------------------------*/
+.thclick {
+	background-color: #A4B0FC;
+}
+
+img {
+	width: 20px;
+	height: 20px;
+	border:none;
+	float: right;
+}
